@@ -7,6 +7,7 @@ module Data.Path
   , size
   ) where
 
+
 import Prelude
 
 import Data.Maybe (Maybe(..))
