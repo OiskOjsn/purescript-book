@@ -29,6 +29,7 @@ root =
         ]
     , Directory "/etc/"
         [ File "/etc/hosts" 300
+        , File "/etc/dummy" 4000
         ]
     , Directory "/home/"
         [ Directory "/home/user/"

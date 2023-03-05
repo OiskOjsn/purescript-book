@@ -1,4 +1,8 @@
-module Test.Main where
+module Test.Main
+  ( allFileAndDirectoryNames
+  , main
+  )
+  where
 
 import Prelude
 import Test.Examples
@@ -17,8 +21,7 @@ import Test.Unit.Main (runTest)
 main :: Effect Unit
 main =
   runTest do
-    runChapterExamples
-    {-  Move this block comment starting point to enable more tests
+    -- runChapterExamples
     suite "Exercise Group - Recursion" do
       suite "Exercise - isEven" do
         test "0 is even" do
@@ -199,8 +202,10 @@ main =
         testls "works for root" ["/etc/hosts", "/home/user/code/js/test.js"] root
         testls "works for a directory with one file" ["/etc/hosts"] oneFileDir
         testls "works for an empty directory" [] emptyDir
+    {-  Move this block comment starting point to enable more tests
 
 -}
+
 runChapterExamples :: TestSuite
 runChapterExamples =
   suite "Chapter Examples" do
